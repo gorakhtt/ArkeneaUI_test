@@ -1,0 +1,82 @@
+<div>
+    <div class="add-title">
+      <h2 class="primary">Add User</h2>
+    </div>
+    <div>
+      <form [formGroup]="addCusForm">
+          <div class="row">
+          <div class="col-12">
+            <mat-form-field class="my-3 w-100">
+                <input matInput placeholder="Full Name"  formControlName="fullName" required>
+                <mat-error *ngIf="addCusForm.controls.fullName.hasError('required')">
+                  Please enter full name
+                </mat-error>
+                <mat-error *ngIf="addCusForm.controls.fullName.hasError('pattern')">
+                  Please enter valid full name
+                </mat-error>
+              </mat-form-field>
+          </div>
+          <div class="col-12">
+            <mat-form-field class="my-3 w-100">
+                <input matInput [matDatepicker]="picker1" placeholder="Date of birth"  formControlName="dob" required>
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+                <mat-error *ngIf="addCusForm.controls.dob.hasError('required')">
+                  Please select date of birth 
+                </mat-error>
+               
+              </mat-form-field>
+          </div>
+          <div class="col-12">
+            <mat-form-field class="my-3 w-100" >
+                <input matInput placeholder="Email address" formControlName="email" required>
+                <mat-error *ngIf="addCusForm.controls.email.hasError('required')">
+                  Please enter email id
+                </mat-error>
+                <mat-error *ngIf="addCusForm.controls.email.hasError('email')">
+                  Please enter valid email id
+                </mat-error>
+              </mat-form-field>
+          </div>
+          <div class="col-12">
+           
+              <mat-form-field class="my-3 w-100">
+                <mat-label>Languages</mat-label>
+                <mat-select formControlName="languages" multiple>
+                  <mat-option *ngFor="let lang of langList" [value]="lang">{{lang}}</mat-option>
+                </mat-select>
+                <mat-error *ngIf="addCusForm.controls.languages.hasError('required')">
+                  Select minium one language
+                </mat-error>
+              </mat-form-field>
+          </div>
+          <div class="col-12">
+            <mat-form-field class="my-3 w-100">
+                <textarea matInput placeholder="About"  formControlName="about"></textarea>
+              </mat-form-field>
+          </div>
+          <div class="col-12">
+            <mat-radio-group class="gender" class="my-3 " formControlName="gender" required>
+                <div style="color:grey;">Gender</div>
+                <mat-radio-button color="primary" style="padding:4px 4px 0px 0px;" value="Male" >Male</mat-radio-button>
+                <mat-radio-button  color="primary" style="padding:4px 0px 0px 24px;" value="Female" >Female</mat-radio-button>
+                <mat-error *ngIf="addCusForm.controls.gender.hasError('required')">
+                  Select gender
+                </mat-error>
+              </mat-radio-group>
+              
+          </div>
+          <div class="col-12 my-3">
+            <div class="btn-sec">
+                <button mat-raised-button type="submit" color="primary" class="Update-btn mr-2" (click)="addUser()">Save</button>
+                <button mat-raised-button type="button" class="Discard-btn" (click)="onNoClick()">Cancel</button>
+              </div>
+          </div>
+        </div>
+  
+        
+  
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "fullName": "Gorakh Kharat",
+      "email": "patient@hospital.org",
+      "languages": [
+        "Marathi",
+        "English"
+      ],
+      "dob": "2020-11-12T18:30:00.000Z",
+      "gender": "Male",
+      "about": "test",
+      "id": 1
+    },
+    {
+      "fullName": "Mahesh",
+      "email": "patient@hospital.org",
+      "languages": [
+        "English",
+        "Tamil"
+      ],
+      "dob": "2016-02-01T18:30:00.000Z",
+      "gender": "Female",
+      "about": "test doc",
+      "id": 2
+    },
+    {
+      "fullName": "GQW",
+      "email": "test@gmail.com",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "dob": "2020-11-12T18:30:00.000Z",
+      "gender": "Male",
+      "about": "test",
+      "id": 3
+    },
+    {
+      "fullName": "doctor@hospital.org",
+      "email": "patient@hospital.org",
+      "languages": [
+        "English"
+      ],
+      "dob": "2020-11-11T18:30:00.000Z",
+      "gender": "Male",
+      "about": "test",
+      "id": 4
+    },
+    {
+      "fullName": "hjfh",
+      "email": "patient@hospital.org",
+      "languages": [
+        "Hindi"
+      ],
+      "dob": "+043242-12-31T18:30:00.000Z",
+      "gender": "Female",
+      "about": "",
+      "id": 5
+    },
+    {
+      "fullName": "doctor@hospital.org",
+      "email": "patient@hospital.org",
+      "languages": [
+        "Marathi",
+        "English"
+      ],
+      "dob": "2020-11-12T18:30:00.000Z",
+      "gender": "Male",
+      "about": "test",
+      "id": 6
+    },
+    {
+      "fullName": "doctor@hospital.org",
+      "email": "patient@hospital.org",
+      "languages": "",
+      "dob": "2020-11-12T18:30:00.000Z",
+      "gender": "Male",
+      "about": "",
+      "id": 7
+    },
+    {
+      "fullName": "sdfjdsg",
+      "email": "patient@hospital.org",
+      "languages": [
+        "Marathi",
+        "English"
+      ],
+      "dob": "2020-11-12T18:30:00.000Z",
+      "gender": "Male",
+      "about": "",
+      "id": 8
+    }
+  ]
+}
